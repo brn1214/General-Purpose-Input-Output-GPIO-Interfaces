@@ -1,6 +1,11 @@
 # General-Purpose-Input-Output-GPIO-Interfaces
 > STM32F14
 
+## Goal
+_Implement a two-bit binary counter on LEDs with the ability to subtract. (Use one green LED and one of the two colors from a bi-color LED). A quick button press should add one to the binary number displayed on the LEDs. Upon counter overflow, a simple animation should be displayed: both LEDs blink, followed by the green LED blinking a number of times equal to the number of overflows since the microcontroller was reset. A long button press should subtract one from the binary number displayed on the LEDs. If a subtraction from zero occurs, the overflow counter should decrease by one, and an animation similar to the overflow animation should be displayed._
+
+🐈
+
 In order to realize this laboratory, we need to implement a timer, so we can count the time elapsed
 while the user pushes the botton.
 For this laboratory, we decided to use the TIM2.
